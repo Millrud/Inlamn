@@ -22,7 +22,7 @@ public class CounterTest {
 
     @Test
 
-    public void testgettext() {
+    public void testGetText() {
 
         //arrange
         Counter myObj = new Counter();
@@ -39,7 +39,7 @@ public class CounterTest {
 
     @Test
 
-    public void testchangetext() {
+    public void testChangeText() {
 
         //arrange
         Counter myObj = new Counter();
@@ -56,7 +56,7 @@ public class CounterTest {
 
     @Test
 
-    public void testStopbooleanfalse() {
+    public void testStopBooleanFalse() {
 
         //arrange
         Counter myObj = new Counter();
@@ -141,7 +141,6 @@ public class CounterTest {
 
     public void testGetNumberOfChar() {
 
-        //Uppdatera alla räkna tecken metoder. När jag lägger till ett blanksteg
         //arrange
         Counter myObj = new Counter();
         String words = "Heja Heja";
@@ -315,8 +314,8 @@ public class CounterTest {
     @Test
 
     public void testCountWordsMultipleInputs() {
-        //Kommer jag behöva ändra i metoden changetext för att
-        //få rätt mängd blanksteg. annars kanske vissa ord räknas
+        //Kommer jag behöva ändra i metoden changeText för att
+        //få rätt mängd blanksteg. Annars kanske vissa ord räknas
         // som ett ord i min count metod.
 
         //arrange
@@ -340,7 +339,7 @@ public class CounterTest {
 
     /*@Test
 
-    public void testlongestword2words(){
+    public void testLongestWord2Words(){
 
         //arrange
         Counter myObj = new Counter();
@@ -361,7 +360,7 @@ public class CounterTest {
 
     @Test
 
-    public void testlongestword3words1String() {
+    public void testLongestWord3Words1String() {
 
         //arrange
         Counter myObj = new Counter();
@@ -381,7 +380,7 @@ public class CounterTest {
 
     @Test
 
-    public void testlongestwordtext2strings() {
+    public void testLongestWordText2Strings() {
 
         //arrange
         Counter myObj = new Counter();

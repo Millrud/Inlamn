@@ -18,9 +18,12 @@ public class Counter {
 
         } else if (newText.contains("stop") && !newText.equals("stop")) {
 
-            text += (newText.substring(0, newText.indexOf("stop")));
-            words += (newText.substring(0, newText.indexOf("stop")));
-            i += 1;
+            if (newText.indexOf("stop") != 0) {
+
+                text += (newText.substring(0, newText.indexOf("stop")));
+                words += (newText.substring(0, newText.indexOf("stop")));
+                i += 1;
+            }
 
         }
 
@@ -44,8 +47,15 @@ public class Counter {
     }
 
     public int countWords() {
-        String[] wordsToCount = words.split("\\s+");
-        return wordsToCount.length;
+
+        if (words.equals("")) {
+            return 0;
+
+        } else {
+            String[] wordsToCount = words.split("\\s+");
+            return wordsToCount.length;
+        }
+
     }
 
     public String findLongestWord() {
